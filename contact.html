@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="h2">Contact Us</h1>
+      <div class="form-container">
+        <form action="https://httpbin.org/get" method="post">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">First Name:</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+              autocomplete="on"
+              autofocus
+            />
+
+            <label for="last-name">Last Name:</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+              autocomplete="on"
+            />
+
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              autocomplete="on"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Login Information</legend>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="on"
+            />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              autocomplete="on"
+            />
+
+            <label for="remember-me">Remember me:</label>
+            <input type="checkbox" id="remember-me" name="remember-me" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Feedback</legend>
+            <label for="comments">Comments or Questions:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              placeholder="Type your message here..."
+              required
+            ></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Newsletter</legend>
+            <label for="subscribe-newsletter">Subscribe to Newsletter:</label>
+            <input
+              type="checkbox"
+              id="subscribe-newsletter"
+              name="subscribe-newsletter"
+            />
+          </fieldset>
+
+          <fieldset>
+            <button class="button" type="submit">Submit</button>
+            <button class="button reset-button" type="reset">Reset</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#" class="button back-to-top">Back to top</a>
+      <p>&copy; 2023 New York City Tourist Guide. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
